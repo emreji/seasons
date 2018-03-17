@@ -1,0 +1,193 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+.hidden {
+	position: absolute;
+	left: -10000px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.button {
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 15px 55px;
+	cursor: pointer;
+	text-decoration: none;
+	position: relative;
+}
+
+.summerButton:focus, .winterButton:focus {
+	
+	outline: 0;
+}
+
+.ghost {
+	border: 2px solid #fff;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5), inset 0 0 10px rgba(0,0,0,0.5);
+	text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+
+}
+
+.seasons {
+	z-index: 100;
+	position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.winter {
+	background: url(../images/winter1.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 760px;
+	position: relative;
+	overflow: hidden;
+}
+
+.olafWinter {
+	background: url(../images/Olaf-winter.png);
+	background-size: contain;
+	width: 10%;
+	height: 170px;
+	position: absolute;
+	top: 500px;
+	left: 600px;
+}
+
+.snowFall1 {
+	background:url(../images/snow1.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: animateOne 10s infinite linear;
+}
+
+@keyframes animateOne{
+	0% {
+		background-position: 0px 0px;
+	}
+
+	100% {
+		background-position: 100px 800px;
+	}
+}
+
+.snowFall2 {
+	background:url(../images/snow1.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: animateTwo 10s infinite linear;
+	background-size: 300px;
+	filter: blur(1px);
+}
+
+@keyframes animateTwo{
+	0% {
+		background-position: 0px -100px;
+	}
+
+	100% {
+		background-position: 0px 800px;
+	}
+}
+
+.snowFall3 {
+	background:url(../images/snow1.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: animateThree 10s infinite linear;
+	background-size: 800px;
+	filter: blur(2px);
+}
+
+@keyframes animateThree{
+	0% {
+		background-position: 0px 100px;
+	}
+
+	100% {
+		background-position: 300px 800px;
+	}
+}
+
+.summer {
+	background: url(../images/summer.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+	position: relative;
+	overflow: hidden;
+}
+
+.sun {
+	border-radius: 50%;
+	background-color: yellow;
+  	width: 50px;
+  	height: 50px;
+	position: absolute;
+	top: 10%;
+	left: 45%;
+	filter: blur(2px);
+}
+
+.smurf {
+	background: url(../images/smurf.png);
+	background-size: contain;
+	width: 10%;
+	height: 180px;
+	position: absolute;
+	top: 55%;
+	left: 30%;
+	z-index: 10;
+
+}
+
+.boat {
+	background: url(../images/boat2.png);
+	background-size: contain;
+	width: 10%;
+	height: 46px;
+	position: relative;
+	top: 60%;
+	animation: boatmove 30s infinite linear;
+}
+
+@keyframes boatmove {
+	0% {
+		left: 0%;
+	}
+
+	100% {
+		left: 100%;
+	}
+}
+
+
+
+
+
+
+
+
